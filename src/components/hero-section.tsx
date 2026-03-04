@@ -1,8 +1,12 @@
 'use client'
 
+import { useState } from 'react'
 import { motion } from 'framer-motion'
+import ComingSoonModal from './coming-soon-modal'
 
 export default function HeroSection() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   return (
     <section className="relative flex min-h-[100svh] flex-col items-center justify-center px-5 py-16 md:px-6 md:py-20">
       {/* Background gradient overlay */}
@@ -105,22 +109,24 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.9 }}
           className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
         >
-          <a
-            href="#"
+          <button
+            onClick={() => setIsModalOpen(true)}
             className="glass-card glow-cyan inline-flex w-full items-center justify-center gap-3 rounded-full px-8 py-3.5 text-sm font-medium text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,229,255,0.25)] sm:w-auto"
           >
             <AppleIcon />
             App Store
-          </a>
-          <a
-            href="#"
+          </button>
+          <button
+            onClick={() => setIsModalOpen(true)}
             className="glass-card inline-flex w-full items-center justify-center gap-3 rounded-full px-8 py-3.5 text-sm font-medium text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.2)] sm:w-auto"
           >
             <PlayStoreIcon />
             Google Play
-          </a>
+          </button>
         </motion.div>
       </motion.div>
+
+      <ComingSoonModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
       {/* Scroll Indicator */}
       <motion.div
