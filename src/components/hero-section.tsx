@@ -116,13 +116,15 @@ export default function HeroSection() {
             <AppleIcon />
             App Store
           </button>
-          <button
-            onClick={() => setIsModalOpen(true)}
+          <a
+            href="https://play.google.com/store/apps/details?id=com.TeamAether.Aether"
+            target="_blank"
+            rel="noopener noreferrer"
             className="glass-card inline-flex w-full items-center justify-center gap-3 rounded-full px-8 py-3.5 text-sm font-medium text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.2)] sm:w-auto"
           >
             <PlayStoreIcon />
             Google Play
-          </button>
+          </a>
         </motion.div>
       </motion.div>
 
