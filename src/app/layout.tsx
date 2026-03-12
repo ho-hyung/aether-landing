@@ -9,21 +9,53 @@ export const viewport: Viewport = {
   viewportFit: 'cover',
 }
 
+const BASE_URL = 'https://aether-page.vercel.app'
+
 export const metadata: Metadata = {
-  title: 'AETHER - My Emotional Space',
+  metadataBase: new URL(BASE_URL),
+  title: {
+    default: 'AETHER - My Emotional Space | 감정을 별로 만드는 앱',
+    template: '%s | AETHER',
+  },
   description:
-    '당신의 감정은 먼지가 아니라, 별이 됩니다. 입자 물리학 기반 감정 트래커 AETHER.',
+    '당신의 감정은 먼지가 아니라, 별이 됩니다. 입자 물리학에서 영감을 받은 감정 표현 앱 AETHER. 터치 한 번으로 감정을 우주의 입자로 변환하세요.',
+  keywords: [
+    'AETHER', '에테르', '감정 트래커', '감정 표현 앱', '감정 일기',
+    '감정 기록', '입자 물리학', '감정 시각화', '감정 우주',
+    'emotional tracker', 'emotion app', 'particle physics emotion',
+  ],
+  authors: [{ name: 'Team Aether' }],
+  creator: 'Team Aether',
   openGraph: {
     title: 'AETHER - My Emotional Space',
     description:
-      '당신의 감정은 먼지가 아니라, 별이 됩니다. 입자 물리학 기반 감정 트래커.',
+      '당신의 감정은 먼지가 아니라, 별이 됩니다. 입자 물리학 기반 감정 표현 앱 AETHER.',
+    url: BASE_URL,
+    siteName: 'AETHER',
     type: 'website',
     locale: 'ko_KR',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AETHER - My Emotional Space',
-    description: '입자 물리학 기반 감정 트래커 AETHER',
+    description: '당신의 감정은 먼지가 아니라, 별이 됩니다. 입자 물리학 기반 감정 표현 앱.',
+  },
+  alternates: {
+    canonical: BASE_URL,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'GOOGLE_SITE_VERIFICATION_CODE',
   },
 }
 
