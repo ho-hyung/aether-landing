@@ -8,7 +8,7 @@ export default function HeroSection() {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
-    <section className="relative flex min-h-[100svh] flex-col items-center justify-center px-5 py-16 md:px-6 md:py-20">
+    <section className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-5 py-16 md:px-6 md:py-20">
       {/* Background gradient overlay */}
       <div
         className="pointer-events-none absolute inset-0 z-0"
@@ -20,7 +20,7 @@ export default function HeroSection() {
 
       {/* Cosmic Orb — large animated nebula behind headline */}
       <div className="pointer-events-none absolute left-1/2 top-[30%] z-0 -translate-x-1/2 -translate-y-1/2 md:top-1/3">
-        <div className="relative h-[280px] w-[280px] sm:h-[380px] sm:w-[380px] md:h-[560px] md:w-[560px]">
+        <div className="relative h-[280px] w-[280px] overflow-hidden sm:h-[380px] sm:w-[380px] md:h-[560px] md:w-[560px]">
           {/* Outer halo rings */}
           <div className="animate-spin-slow absolute left-1/2 top-1/2 h-[110%] w-[110%] rounded-full border border-aether-cyan/[0.04]" />
           <div className="animate-spin-slow-reverse absolute left-1/2 top-1/2 h-[90%] w-[90%] rounded-full border border-aether-purple/[0.06]" />

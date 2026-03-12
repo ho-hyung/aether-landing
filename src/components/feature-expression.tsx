@@ -5,7 +5,7 @@ import ScrollAnimation from './scroll-animation'
 
 export default function FeatureExpression() {
   return (
-    <section className="relative px-5 py-16 sm:px-6 md:py-32">
+    <section className="relative overflow-hidden px-5 py-16 sm:px-6 md:py-32">
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col items-center gap-8 sm:gap-12 lg:flex-row lg:gap-16">
           {/* Text Content */}
@@ -49,7 +49,7 @@ export default function FeatureExpression() {
           </div>
 
           {/* Phone mockup — real image */}
-          <ScrollAnimation direction="right" delay={0.2} className="flex-1">
+          <ScrollAnimation direction="right" delay={0.2} className="flex-1 overflow-hidden">
             <div className="relative mx-auto w-full max-w-[360px] md:max-w-[420px]">
               {/* Glow effect behind phone */}
               <div className="pointer-events-none absolute -inset-12 -z-10 rounded-full bg-gradient-to-br from-aether-cyan/10 via-aether-purple/8 to-aether-pink/6 blur-3xl" />
@@ -76,9 +76,9 @@ export default function FeatureExpression() {
               </div>
 
               {/* Floating accent particles outside phone */}
-              <div className="animate-float pointer-events-none absolute -right-4 top-1/4 h-2 w-2 rounded-full bg-aether-cyan/50 shadow-[0_0_8px_rgba(0,229,255,0.4)]" />
-              <div className="animate-float-delay pointer-events-none absolute -left-6 top-2/3 h-1.5 w-1.5 rounded-full bg-aether-purple/50 shadow-[0_0_8px_rgba(168,85,247,0.4)]" />
-              <div className="animate-float pointer-events-none absolute -right-8 bottom-1/4 h-1 w-1 rounded-full bg-aether-pink/50 shadow-[0_0_6px_rgba(236,72,153,0.4)]" style={{ animationDelay: '2s' }} />
+              <div className="animate-float pointer-events-none absolute right-0 top-1/4 h-2 w-2 rounded-full bg-aether-cyan/50 shadow-[0_0_8px_rgba(0,229,255,0.4)]" />
+              <div className="animate-float-delay pointer-events-none absolute left-0 top-2/3 h-1.5 w-1.5 rounded-full bg-aether-purple/50 shadow-[0_0_8px_rgba(168,85,247,0.4)]" />
+              <div className="animate-float pointer-events-none absolute right-0 bottom-1/4 h-1 w-1 rounded-full bg-aether-pink/50 shadow-[0_0_6px_rgba(236,72,153,0.4)]" style={{ animationDelay: '2s' }} />
             </div>
           </ScrollAnimation>
         </div>

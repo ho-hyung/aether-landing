@@ -55,7 +55,7 @@ export default function Testimonials() {
   const t = testimonials[current]
 
   return (
-    <section className="relative px-5 py-16 sm:px-6 md:py-32">
+    <section className="relative overflow-hidden px-5 py-16 sm:px-6 md:py-32">
       {/* Background constellation */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <svg className="h-full w-full opacity-[0.03]" viewBox="0 0 800 600">
@@ -99,11 +99,11 @@ export default function Testimonials() {
             <div className="glass-card gradient-border overflow-hidden rounded-2xl px-10 py-8 sm:px-12 md:p-12">
               {/* Decorative accent glow (changes with testimonial) */}
               <div
-                className="pointer-events-none absolute -right-20 -top-20 h-40 w-40 rounded-full blur-3xl transition-colors duration-700"
+                className="pointer-events-none absolute right-0 top-0 h-40 w-40 rounded-full blur-3xl transition-colors duration-700"
                 style={{ background: `${t.color}08` }}
               />
               <div
-                className="pointer-events-none absolute -bottom-16 -left-16 h-32 w-32 rounded-full blur-3xl transition-colors duration-700"
+                className="pointer-events-none absolute bottom-0 left-0 h-32 w-32 rounded-full blur-3xl transition-colors duration-700"
                 style={{ background: `${t.color}06` }}
               />
 
@@ -172,7 +172,7 @@ export default function Testimonials() {
               {/* Navigation arrows */}
               <button
                 onClick={prev}
-                className="absolute -left-1 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white/5 text-white/60 transition-all hover:bg-white/10 hover:text-white sm:left-2 md:left-4 md:h-10 md:w-10"
+                className="absolute left-1 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white/5 text-white/60 transition-all hover:bg-white/10 hover:text-white sm:left-2 md:left-4 md:h-10 md:w-10"
                 aria-label="이전 후기"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -181,7 +181,7 @@ export default function Testimonials() {
               </button>
               <button
                 onClick={next}
-                className="absolute -right-1 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white/5 text-white/60 transition-all hover:bg-white/10 hover:text-white sm:right-2 md:right-4 md:h-10 md:w-10"
+                className="absolute right-1 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white/5 text-white/60 transition-all hover:bg-white/10 hover:text-white sm:right-2 md:right-4 md:h-10 md:w-10"
                 aria-label="다음 후기"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

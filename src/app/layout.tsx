@@ -55,7 +55,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="overflow-x-hidden">
+      <body className="overflow-x-clip">
         <Script
           id="gtm-script"
           strategy="afterInteractive"

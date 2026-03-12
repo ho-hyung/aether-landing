@@ -32,8 +32,8 @@ export default function ComingSoonModal({ isOpen, onClose }: ComingSoonModalProp
           >
             <div className="glass-card gradient-border overflow-hidden rounded-2xl p-8 text-center">
               {/* Decorative glow */}
-              <div className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-aether-cyan/10 blur-3xl" />
-              <div className="pointer-events-none absolute -bottom-10 -left-10 h-28 w-28 rounded-full bg-aether-purple/10 blur-3xl" />
+              <div className="pointer-events-none absolute right-0 top-0 h-32 w-32 rounded-full bg-aether-cyan/10 blur-3xl" />
+              <div className="pointer-events-none absolute bottom-0 left-0 h-28 w-28 rounded-full bg-aether-purple/10 blur-3xl" />
 
               {/* Icon */}
               <div className="relative mx-auto mb-5 flex h-16 w-16 items-center justify-center">

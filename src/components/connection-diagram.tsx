@@ -29,7 +29,7 @@ const features = [
 
 export default function ConnectionDiagram() {
   return (
-    <section className="relative px-5 py-16 sm:px-6 md:py-32">
+    <section className="relative overflow-hidden px-5 py-16 sm:px-6 md:py-32">
       <div
         className="pointer-events-none absolute inset-0"
         style={{
