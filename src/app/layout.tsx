@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: '%s | AETHER',
   },
   description:
-    '당신의 감정은 먼지가 아니라, 별이 됩니다. 입자 물리학에서 영감을 받은 감정 표현 앱 AETHER. 터치 한 번으로 감정을 우주의 입자로 변환하세요.',
+    '당신의 감정은 먼지가 아니라, 별이 됩니다. 입자 물리학에서 영감을 받은 감정 표현 앱 AETHER. 터치 한 번으로 감정을 우주의 입자로 변환하세요. 지금 무료 다운로드.',
   keywords: [
     'AETHER', '에테르', '감정 트래커', '감정 표현 앱', '감정 일기',
     '감정 기록', '입자 물리학', '감정 시각화', '감정 우주',
@@ -34,11 +34,20 @@ export const metadata: Metadata = {
     siteName: 'AETHER',
     type: 'website',
     locale: 'ko_KR',
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'AETHER - 당신의 감정은 먼지가 아니라, 별이 됩니다',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AETHER - My Emotional Space',
     description: '당신의 감정은 먼지가 아니라, 별이 됩니다. 입자 물리학 기반 감정 표현 앱.',
+    images: ['/opengraph-image'],
   },
   alternates: {
     canonical: BASE_URL,

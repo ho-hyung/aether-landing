@@ -5,7 +5,7 @@ import ScrollAnimation from './scroll-animation'
 
 export default function FeatureExpression() {
   return (
-    <section className="relative overflow-hidden px-5 py-16 sm:px-6 md:py-32">
+    <section id="features" className="relative overflow-hidden px-5 py-16 sm:px-6 md:py-32">
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col items-center gap-8 sm:gap-12 lg:flex-row lg:gap-16">
           {/* Text Content */}

@@ -103,6 +103,19 @@ export default function HeroSection() {
           터치 한 번으로 감정을 우주의 입자로 변환하세요.
         </motion.p>
 
+        {/* AI-parseable summary for GEO — visually subtle, semantically rich */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="mx-auto mb-8 max-w-xl text-xs leading-relaxed text-aether-muted/60 sm:text-sm md:mb-10"
+        >
+          AETHER는 5가지 감정(기쁨·슬픔·분노·평온·사랑)을 입자로 시각화하고,
+          사운드스케이프로 청각화하며, 소중한 사람과 감정 궤도를 실시간 공유할 수 있는
+          무료 감정 표현 앱입니다. 3가지 핵심 기능 — 감정 입자 터치, 궤도 기록, 감정 사운드 —
+          으로 매일의 감정을 우주처럼 기록하세요.
+        </motion.p>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

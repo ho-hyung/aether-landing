@@ -36,7 +36,7 @@ const relationships = [
 
 export default function EmotionSharing() {
   return (
-    <section className="relative overflow-hidden px-5 py-16 sm:px-6 md:py-32">
+    <section id="sharing" className="relative overflow-hidden px-5 py-16 sm:px-6 md:py-32">
       {/* Background accent */}
       <div
         className="pointer-events-none absolute inset-0"

@@ -55,7 +55,7 @@ export default function Testimonials() {
   const t = testimonials[current]
 
   return (
-    <section className="relative overflow-hidden px-5 py-16 sm:px-6 md:py-32">
+    <section id="reviews" className="relative overflow-hidden px-5 py-16 sm:px-6 md:py-32">
       {/* Background constellation */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <svg className="h-full w-full opacity-[0.03]" viewBox="0 0 800 600">
